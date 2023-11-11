@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#67D5CA"
+    tools:context=".cocktail.CocktailActivity">
+
+    <TextView
+        android:id="@+id/AlcoholText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:text="Alcohol:"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/CocktailNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="#03115E"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="name" />
+
+    <TextView
+        android:id="@+id/AlcoholTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:textColor="#03115E"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/AlcoholText"
+        app:layout_constraintTop_toTopOf="@+id/AlcoholText"
+        tools:text="alcohol" />
+
+    <TextView
+        android:id="@+id/ServedInTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#03115E"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/AlcoholTextView"
+        app:layout_constraintTop_toTopOf="@+id/ServedInText"
+        tools:text="ServedIn" />
+
+    <TextView
+        android:id="@+id/ServedInText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="ServedIn:"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/AlcoholText"
+        app:layout_constraintTop_toBottomOf="@+id/AlcoholText" />
+
+    <TextView
+        android:id="@+id/ScoreTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#03115E"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/CategoryTextView"
+        app:layout_constraintTop_toTopOf="@+id/ScoreText"
+        tools:text="Score" />
+
+    <TextView
+        android:id="@+id/ScoreText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Score:"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/CategoryText"
+        app:layout_constraintTop_toBottomOf="@+id/CategoryText" />
+
+    <TextView
+        android:id="@+id/CategoryTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#03115E"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/ServedInTextView"
+        app:layout_constraintTop_toTopOf="@+id/CategoryText"
+        tools:text="Category" />
+
+    <TextView
+        android:id="@+id/CategoryText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Category:"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/ServedInText"
+        app:layout_constraintTop_toBottomOf="@+id/ServedInText" />
+
+    <TextView
+        android:id="@+id/PreparationTextID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="180dp"
+        android:text="Preparation:"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/AlcoholText"
+        app:layout_constraintStart_toEndOf="@+id/AlcoholTextView"
+        app:layout_constraintTop_toTopOf="@+id/AlcoholText" />
+
+    <TextView
+        android:id="@+id/IngredientsTextView"
+        android:layout_width="359dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textAlignment="center"
+        android:textColor="#03115E"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/IngredientsText"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="@+id/IngredientsText"
+        app:layout_constraintTop_toBottomOf="@+id/IngredientsText"
+        tools:text="Ingredients" />
+
+    <TextView
+        android:id="@+id/IngredientsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Ingredients:"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/PreparationTextID"
+        app:layout_constraintHorizontal_bias="0.618"
+        app:layout_constraintStart_toStartOf="@+id/PreparationTextID"
+        app:layout_constraintTop_toBottomOf="@+id/PreparationTextViewID" />
+
+    <TextView
+        android:id="@+id/PreparationTextViewID"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textAlignment="center"
+        android:textColor="#03115E"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/PreparationTextID"
+        app:layout_constraintStart_toStartOf="@+id/PreparationTextID"
+        app:layout_constraintTop_toBottomOf="@+id/PreparationTextID"
+        tools:text="preparation" />
+
+    <Button
+        android:id="@+id/AddButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#03115E"
+        android:enabled="false"
+        android:onClick="onAddButtonPressed"
+        android:text="ADD"
+        app:layout_constraintStart_toStartOf="@+id/ScoreText"
+        app:layout_constraintTop_toBottomOf="@+id/ScoreText" />
+
+    <Button
+        android:id="@+id/ScoreButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:backgroundTint="#03115E"
+        android:onClick="onScoreButtonPressed"
+        android:text="SCORE IT!"
+        app:layout_constraintBottom_toBottomOf="@+id/AddButton"
+        app:layout_constraintStart_toEndOf="@+id/AddButton"
+        app:layout_constraintTop_toTopOf="@+id/AddButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

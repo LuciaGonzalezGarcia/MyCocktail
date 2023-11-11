@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#67D5CA">
+
+    <TextView
+        android:id="@+id/CocktailNameID"
+        android:layout_width="399dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="8dp"
+        android:background="#1B93A3"
+        android:backgroundTint="#1A717C"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Name" />
+
+    <TextView
+        android:id="@+id/CategoryID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="16dp"
+        android:text="Category:"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CocktailNameID" />
+
+    <TextView
+        android:id="@+id/AlcoholID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="29dp"
+        android:text="Alcohol:"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CategoryID" />
+
+    <TextView
+        android:id="@+id/IngredientsID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="29dp"
+        android:text="Ingredients:"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AlcoholID" />
+
+    <TextView
+        android:id="@+id/CategoryTextID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="43dp"
+        android:textColor="#03115E"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/CategoryID"
+        app:layout_constraintTop_toTopOf="@+id/CategoryID"
+        tools:text="categories" />
+
+    <TextView
+        android:id="@+id/AlcoholTextID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:textColor="#03115E"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/AlcoholID"
+        app:layout_constraintTop_toTopOf="@+id/AlcoholID"
+        tools:text="alcohol" />
+
+    <TextView
+        android:id="@+id/IngredientsTextID"
+        android:layout_width="237dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:textColor="#03115E"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/IngredientsID"
+        app:layout_constraintTop_toTopOf="@+id/IngredientsID"
+        tools:text="ingredients" />
+</androidx.constraintlayout.widget.ConstraintLayout>
